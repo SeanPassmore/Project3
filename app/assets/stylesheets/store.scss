@@ -10,8 +10,7 @@
                     margin: 0;
                     li {
                       padding: 1em;
-                      padding-bottom: 5em;
-                      margin: 0;
+
                       border-bottom: solid thin #ddd;
 // This makes sure our <li> has enough height // to hold the entire image, since it's floated &::after {
 clear: both; content: " "; display: block;
@@ -20,7 +19,7 @@ img {
                         float: left;
                         padding: 1em;
                         margin-right: 1em;
-                        margin-bottom: 1em;
+                        margin-bottom: 2em;
                         box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
 }
 .price {
