@@ -10,7 +10,7 @@
                     margin: 0;
                     li {
                       padding: 1em;
-
+                      padding-bottom: 3em;
                       margin: 0;
                       border-bottom: solid thin #ddd;
 // This makes sure our <li> has enough height // to hold the entire image, since it's floated &::after {
