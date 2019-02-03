@@ -1,0 +1,149 @@
+commit e2ee3428469adec3b131291d642532941247977d
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Wed Jan 30 18:56:15 2019 -0500
+
+    Fixed CSS issues with Dr. Xu
+
+commit 0eb7a11c7ea86240df4c20cc015ba2b5037103e6
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Wed Jan 30 13:29:31 2019 -0500
+
+    Fixed style issues
+
+commit aea3b5ced9d53a65f72f3536b030e7874df30464
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Wed Jan 30 13:27:12 2019 -0500
+
+    Fixed style issues
+
+commit 4cd135c2b8c72094610b6694678e3489b6acdca0
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:59:38 2019 -0500
+
+    Changing margins
+
+commit 162a51053dde882cb6a0a383f422d236a8757c2d
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:58:52 2019 -0500
+
+    Changing margins
+
+commit f1b7f15921fcd02525470cd9e43f8faab415727f
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:57:06 2019 -0500
+
+    Fixing the image margins for uploads
+
+commit b013c4c889c40ee9fce293425a8d8be37ce585f4
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:34:59 2019 -0500
+
+    Correcting padding. Actually fixed it i think
+
+commit d1ee30d52e194d31c92af069362ca2a1f0f6e370
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:33:32 2019 -0500
+
+    Correcting padding one more time
+
+commit 1d13a6f6a9a07539e91102f338b572f72fd76faf
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:32:58 2019 -0500
+
+    Correcting padding size again
+
+commit f09d68157616924c32cab46b95d74bb60741e31c
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:32:31 2019 -0500
+
+    Correcting padding size
+
+commit df2db8a2754db29c08665483bc5f6a492108c677
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:31:16 2019 -0500
+
+    Trying to fix the line going through my images
+
+commit 48791dd46bb3bb032ade54bcaf911a07d5f73ed8
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:18:39 2019 -0500
+
+    changed index.html to properly display price
+
+commit d5b3121ed68a231f370f31553cb6817b7c0786af
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:07:28 2019 -0500
+
+    Removed a line from gemfile
+
+commit 84fd016857b4c1a272bf5424cd4ac7e021670b11
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:04:29 2019 -0500
+
+    Updated gemfile
+
+commit dc971b1609c14479680bd472c4c49a57d0d2db40
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 19:50:24 2019 -0500
+
+    Updated gemlock for heroku
+
+commit 3644eee33b4dfde2cbc087c9e8ce2aa8eb1f1028
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 18:18:37 2019 -0500
+
+    Completed task 3.2
+
+commit 9094377de7532752000f5c04d799127b4b5fa0c8
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 10:24:16 2019 -0500
+
+    Finished image upload function. merging to master
+
+commit c24d14576d674f4291df3ab062c39fea3ca25204
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 10:06:07 2019 -0500
+
+    tried to bugfix the image upload function
+
+commit bd3e7c72e32e19d66e611da0f200cb1607bf2cbc
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 16:14:07 2019 -0500
+
+    Completed iteration c. Merging branch to master
+
+commit 792c691eb64a50d565b2b78525c5037424a10940
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 16:01:26 2019 -0500
+
+    fixed syntax error in applications.scss
+
+commit dfb562dbcdb63e97e758589e320ca4f6125f3ef2
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 15:59:47 2019 -0500
+
+    completed c1
+
+commit 36e5c07247de06e940221bb20aea1a1e7e3ddb08
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 13:39:17 2019 -0500
+
+    Completed iteration B. Closing branch and merging.
+
+commit af64f0d083d956197516c1462688b5e02b989aa3
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 13:34:27 2019 -0500
+
+    Completed task A2. Closing branch and merging.
+
+commit 16b37ded2537362bd0b17e8cf2b6b1508ebec9f9
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 12:21:13 2019 -0500
+
+    Completed task A1
+
+commit b2b6897bb21584dae6896705659e3f56e4397816
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 11:42:07 2019 -0500
+
+    Created Project 2
