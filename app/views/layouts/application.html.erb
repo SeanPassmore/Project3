@@ -10,6 +10,7 @@
 
   <body>
     <header class="main">
+
       <%= image_tag 'logo.svg', alt: 'The Pragmatic Bookshelf' %>
       <h1><%= @page_title %></h1>
       </header>
@@ -19,6 +20,7 @@
       <li><%= link_to "Home", store_index_path %>!</li>
       <li><a href="/questions">Questions</a></li> <li><a href="/news">News</a></li>
       <li><a href="/contact">Contact</a></li>
+      <li><%= link_to "My Cart", cart_path(session[:cart_id]) %></li>
       </ul>
     </nav>
 
