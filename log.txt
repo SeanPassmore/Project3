@@ -1,100 +1,317 @@
-2019-02-05T05:25:41.837595+00:00 app[web.1]: : SELECT "products".* FROM "products" ORDER BY "products"."popularity" DESC):
-2019-02-05T05:25:41.837746+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     10:
-2019-02-05T05:25:41.837748+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     11:
-2019-02-05T05:25:41.837749+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     12: <ul class="catalog">
-2019-02-05T05:25:41.837751+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     13: <% @products.each do |product| %>
-2019-02-05T05:25:41.837753+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     14: <li>
-2019-02-05T05:25:41.837754+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     15: <%= image_tag (product.image_url) %>
-2019-02-05T05:25:41.837755+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]     16: <h2><%= product.title %></h2>
-2019-02-05T05:25:41.837774+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea]
-2019-02-05T05:25:41.837810+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea] app/views/store/index.html.erb:13:in `_app_views_store_index_html_erb___858598278096039948_47287604789860'
-2019-02-05T05:25:41.837811+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea] app/controllers/store_controller.rb:20:in `block (2 levels) in index'
-2019-02-05T05:25:41.837812+00:00 app[web.1]: [9b760ff6-adc7-400b-9f76-2d7a5b4a22ea] app/controllers/store_controller.rb:14:in `index'
-2019-02-05T05:26:05.147117+00:00 heroku[run.2750]: State changed from starting to up
-2019-02-05T05:26:12.094541+00:00 heroku[run.2750]: State changed from up to complete
-2019-02-05T05:26:12.078518+00:00 heroku[run.2750]: Process exited with status 0
-2019-02-05T05:26:24.726384+00:00 app[api]: Starting process with command `rails db:seed` by user spassmore@valdosta.edu
-2019-02-05T05:26:31.429758+00:00 heroku[run.8205]: State changed from starting to up
-2019-02-05T05:26:38.611561+00:00 heroku[run.8205]: Process exited with status 0
-2019-02-05T05:26:46.077185+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=8af50bb6-4dd4-4464-b49a-c3d0dd9e2a18 fwd="173.17.150.20" dyno=web.1 connect=0ms service=1ms status=304 bytes=48 protocol=https
-2019-02-05T05:31:45.334821+00:00 heroku[run.3916]: Starting process with command `bundle exec rake db:reset --confirm project3-sean-passmore`
-2019-02-05T05:31:57.002032+00:00 app[api]: Starting process with command `bundle exec rake db:reset` by user spassmore@valdosta.edu
-2019-02-05T05:32:06.817255+00:00 heroku[run.8746]: Awaiting client
-2019-02-05T05:32:06.863939+00:00 heroku[run.8746]: Starting process with command `bundle exec rake db:reset`
-2019-02-05T05:33:55.929875+00:00 app[api]: Starting process with command `rails db:migrate` by user spassmore@valdosta.edu
-2019-02-05T05:34:10.366711+00:00 heroku[run.2042]: State changed from up to complete
-2019-02-05T05:34:27.660626+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=082feb5b-57ce-49c2-8ed8-9cd2988432c5 fwd="173.17.150.20" dyno=web.1 connect=1ms service=2ms status=304 bytes=48 protocol=https
-2019-02-05T05:34:40.565080+00:00 heroku[run.4309]: Awaiting client
-2019-02-05T05:34:40.583644+00:00 heroku[run.4309]: Starting process with command `rails db:seed`
-2019-02-05T05:34:40.780585+00:00 heroku[run.4309]: State changed from starting to up
-2019-02-05T05:34:47.172795+00:00 heroku[run.4309]: Process exited with status 0
-2019-02-05T05:35:26.012390+00:00 heroku[router]: at=info method=GET path="/" host=project3-sean-passmore.herokuapp.com request_id=6e7f965e-a489-4cf4-aac0-c6ae927477a3 fwd="173.17.150.20" dyno=web.1 connect=1ms service=18ms status=500 bytes=1827 protocol=https
-2019-02-05T05:35:25.998622+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] Started GET "/" for 173.17.150.20 at 2019-02-05 05:35:25 +0000
-2019-02-05T05:35:25.999287+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] Processing by StoreController#index as HTML
-2019-02-05T05:35:26.000181+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]   Rendering store/index.html.erb within layouts/application
-2019-02-05T05:35:26.002785+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]   [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."popularity" DESC[0m
-2019-02-05T05:35:26.012922+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]   Rendered store/index.html.erb within layouts/application (12.6ms)
-2019-02-05T05:35:26.014264+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms)
-2019-02-05T05:35:26.014803+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]
-2019-02-05T05:35:26.014831+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] ActionView::Template::Error (No route matches {:action=>"show", :controller=>"carts", :id=>nil}, missing required keys: [:id]):
-2019-02-05T05:35:26.014951+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     22:   <li><%= link_to "Home (SPA)", store_index_path(spa: true) %></li>
-2019-02-05T05:35:26.014953+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     23:       <li><a href="/questions">Questions</a></li> <li><a href="/news">News</a></li>
-2019-02-05T05:35:26.014954+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     24:       <li><a href="/contact">Contact</a></li>
-2019-02-05T05:35:26.014955+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     25:       <li><%= link_to "My Cart", cart_path(session[:cart_id]) %></li>
-2019-02-05T05:35:26.014957+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     26:       </ul>
-2019-02-05T05:35:26.014959+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     27:     </nav>
-2019-02-05T05:35:26.014960+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]     28:
-2019-02-05T05:35:26.014963+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3]
-2019-02-05T05:35:26.014992+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___3908081146105971867_47287604783900'
-2019-02-05T05:35:26.014993+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] app/controllers/store_controller.rb:20:in `block (2 levels) in index'
-2019-02-05T05:35:26.014995+00:00 app[web.1]: [6e7f965e-a489-4cf4-aac0-c6ae927477a3] app/controllers/store_controller.rb:14:in `index'
-2019-02-05T05:35:26.381012+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=a248129e-c2cb-4ca4-aa95-91335537acc9 fwd="173.17.150.20" dyno=web.1 connect=1ms service=2ms status=200 bytes=143 protocol=https
-2019-02-05T05:35:28.150525+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=cda45f1b-d523-46b1-85b1-74e10cee13b3 fwd="173.17.150.20" dyno=web.1 connect=1ms service=2ms status=200 bytes=143 protocol=https
-2019-02-05T05:35:28.257658+00:00 heroku[router]: at=info method=GET path="/" host=project3-sean-passmore.herokuapp.com request_id=95d9609f-35e5-426b-bffe-48d339c07dd4 fwd="173.17.150.20" dyno=web.1 connect=1ms service=19ms status=500 bytes=1827 protocol=https
-2019-02-05T05:35:28.389708+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=3b9625c8-6a38-46b2-b448-e330e51871f2 fwd="173.17.150.20" dyno=web.1 connect=1ms service=2ms status=200 bytes=143 protocol=https
-2019-02-05T05:35:28.541152+00:00 heroku[router]: at=info method=GET path="/" host=project3-sean-passmore.herokuapp.com request_id=10a45b56-c6d3-4b7f-9eea-cb5ace45b115 fwd="173.17.150.20" dyno=web.1 connect=1ms service=18ms status=500 bytes=1827 protocol=https
-2019-02-05T05:35:28.685477+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=ad76880d-5a70-4ec3-9c96-7143c9f7b0d7 fwd="173.17.150.20" dyno=web.1 connect=1ms service=2ms status=200 bytes=143 protocol=https
-2019-02-05T05:37:21.070692+00:00 heroku[router]: at=info method=GET path="/" host=project3-sean-passmore.herokuapp.com request_id=455a04c3-6653-41ee-a584-8141893461ef fwd="173.17.150.20" dyno=web.1 connect=1ms service=22ms status=500 bytes=1827 protocol=https
-2019-02-05T05:37:21.050669+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] Started GET "/" for 173.17.150.20 at 2019-02-05 05:37:21 +0000
-2019-02-05T05:37:21.051392+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] Processing by StoreController#index as HTML
-2019-02-05T05:37:21.052327+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]   Rendering store/index.html.erb within layouts/application
-2019-02-05T05:37:21.054892+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]   [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."popularity" DESC[0m
-2019-02-05T05:37:21.066657+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]   Rendered store/index.html.erb within layouts/application (14.2ms)
-2019-02-05T05:37:21.068662+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms)
-2019-02-05T05:37:21.070162+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]
-2019-02-05T05:37:21.070226+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] ActionView::Template::Error (No route matches {:action=>"show", :controller=>"carts", :id=>nil}, missing required keys: [:id]):
-2019-02-05T05:37:21.070381+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     22:   <li><%= link_to "Home (SPA)", store_index_path(spa: true) %></li>
-2019-02-05T05:37:21.070383+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     23:       <li><a href="/questions">Questions</a></li> <li><a href="/news">News</a></li>
-2019-02-05T05:37:21.070385+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     24:       <li><a href="/contact">Contact</a></li>
-2019-02-05T05:37:21.070386+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     25:       <li><%= link_to "My Cart", cart_path(session[:cart_id]) %></li>
-2019-02-05T05:37:21.070388+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     26:       </ul>
-2019-02-05T05:37:21.070389+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     27:     </nav>
-2019-02-05T05:37:21.070390+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]     28:
-2019-02-05T05:37:21.070414+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef]
-2019-02-05T05:37:21.070417+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___3908081146105971867_47287604783900'
-2019-02-05T05:37:21.070418+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] app/controllers/store_controller.rb:20:in `block (2 levels) in index'
-2019-02-05T05:37:21.070420+00:00 app[web.1]: [455a04c3-6653-41ee-a584-8141893461ef] app/controllers/store_controller.rb:14:in `index'
-2019-02-05T05:37:21.239082+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=cfe07e4a-294f-4a62-8229-258cb495362d fwd="173.17.150.20" dyno=web.1 connect=1ms service=2ms status=304 bytes=48 protocol=https
-2019-02-05T05:39:06.796274+00:00 heroku[run.4666]: Awaiting client
-2019-02-05T05:39:06.838666+00:00 heroku[run.4666]: Starting process with command `rails db:migrate`
-2019-02-05T05:39:16.637351+00:00 heroku[run.4666]: State changed from up to complete
-2019-02-05T05:40:05.182770+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] Started GET "/" for 173.17.150.20 at 2019-02-05 05:40:05 +0000
-2019-02-05T05:40:05.183424+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] Processing by StoreController#index as HTML
-2019-02-05T05:40:05.184891+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]   Rendering store/index.html.erb within layouts/application
-2019-02-05T05:40:05.187827+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]   [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."popularity" DESC[0m
-2019-02-05T05:40:05.204871+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]   Rendered store/index.html.erb within layouts/application (19.9ms)
-2019-02-05T05:40:05.206477+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.0ms)
-2019-02-05T05:40:05.207420+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]
-2019-02-05T05:40:05.207453+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] ActionView::Template::Error (No route matches {:action=>"show", :controller=>"carts", :id=>nil}, missing required keys: [:id]):
-2019-02-05T05:40:05.208590+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     22:   <li><%= link_to "Home (SPA)", store_index_path(spa: true) %></li>
-2019-02-05T05:40:05.208593+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     23:       <li><a href="/questions">Questions</a></li> <li><a href="/news">News</a></li>
-2019-02-05T05:40:05.208596+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     24:       <li><a href="/contact">Contact</a></li>
-2019-02-05T05:40:05.208597+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     25:       <li><%= link_to "My Cart", cart_path(session[:cart_id]) %></li>
-2019-02-05T05:40:05.208600+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     26:       </ul>
-2019-02-05T05:40:05.208602+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     27:     </nav>
-2019-02-05T05:40:05.208604+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]     28:
-2019-02-05T05:40:05.208610+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04]
-2019-02-05T05:40:05.208612+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___3908081146105971867_47287604783900'
-2019-02-05T05:40:05.208613+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] app/controllers/store_controller.rb:20:in `block (2 levels) in index'
-2019-02-05T05:40:05.208615+00:00 app[web.1]: [0198dd2d-9d8a-4791-8973-4cd954203a04] app/controllers/store_controller.rb:14:in `index'
-2019-02-05T05:40:05.392750+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=project3-sean-passmore.herokuapp.com request_id=5281606d-dc1c-4216-b452-0de2b2529f5d fwd="173.17.150.20" dyno=web.1 connect=0ms service=1ms status=304 bytes=48 protocol=https
+commit c801c202570e68e74fa82f0763b48740ae92f694
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 16:10:44 2019 -0500
+
+    Fixed carts error
+
+commit acf61ca6a1013154d65fe83d8becfb3af0fbb0b4
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 16:09:31 2019 -0500
+
+    Fixed carts error
+
+commit 679994d4841da2d3fd11c091840f0744d4e1d138
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 16:05:34 2019 -0500
+
+    Fixed carts error
+
+commit d8d27356088c220998d5b3dab8c01b96e1d9cf6f
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:54:55 2019 -0500
+
+    attempting to fix error in index
+
+commit ab50e033a744762112411733897b5e3e4a7ee79b
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:50:35 2019 -0500
+
+    attempting to fix error in index
+
+commit 6c7358125bcfb852f511aa10cabbd0b21c943549
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:33:19 2019 -0500
+
+    attempting to fix error in index
+
+commit 6d56e054704a9ef5ccf499221e5d9af064b687f8
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:30:54 2019 -0500
+
+    attempting to fix error in index
+
+commit 32e64da6caf9a64bf55e4c3d31c0cecd047e89fe
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:27:11 2019 -0500
+
+    attempting to fix error in index
+
+commit 3db0a46f593b92c9adc5ea10606a5e275f92f333
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:19:06 2019 -0500
+
+    attempting to fix error in index
+
+commit 5d553bae4a5c2a2b9eb92af9037caec5dde92180
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 15:16:25 2019 -0500
+
+    attempting to fix error in index
+
+commit 6c2d1818e5a75292820e8a32d52a2366b0eaf248
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 13:57:14 2019 -0500
+
+    attempting to fix error in index
+
+commit 8c1beb97308ab17acdea838a180e362862c67701
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 13:50:10 2019 -0500
+
+    attempting to fix error in index
+
+commit 982725fe1f4c10971924b369660d908a7103eca8
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 13:39:24 2019 -0500
+
+    attempting to fix error in index
+
+commit f5a6737e76fc6fc3ce1456e3eb0ad3240bdeed52
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 13:35:09 2019 -0500
+
+    attempting to fix error in index
+
+commit 68fdc06f6803c4a196098279df1d033853abb2d6
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 13:31:41 2019 -0500
+
+    attempting to fix error in index
+
+commit 98ada3f3d8b1bc6c7e433730a41b8afbb2569808
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 01:10:46 2019 -0500
+
+    undid a bug fix which made a bigger bug
+
+commit 7fc1b882af9e71b953bcc6654ac8792e95d4b2b0
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 01:05:37 2019 -0500
+
+    Fixed an error maybe
+
+commit 1cce1601ef4ca6356a57c8ea31ed0afba77f700c
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Tue Feb 5 00:15:22 2019 -0500
+
+    fixed an error with stoe controller
+
+commit 23cfb53d9180e5066bfcd5c522aca15719eed52b
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Feb 4 23:32:58 2019 -0500
+
+    Completed 3.5
+
+commit b722a30e5adbd6e96137c9e77743852e8f4d671f
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Feb 4 22:50:39 2019 -0500
+
+    Finished 3.3
+
+commit 06a42b078386cfceb64c4bedf9390cbb18696ed1
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Feb 4 22:38:27 2019 -0500
+
+    done with playtime
+
+commit ed6283dda6c3fbff5271cfd5428a5853f4659177
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 21:23:34 2019 -0500
+
+    Finished the notification function
+
+commit cd07f2d8bed12fa5eef02a6b0b9d351fcc94da0b
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 19:59:34 2019 -0500
+
+    Fixed a bug
+
+commit b412cc9138b04d5aa0de6a5616cb8c04119de366
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 15:36:00 2019 -0500
+
+    finished task D3
+
+commit b6c048fdd0b18098dcb24f1ec90b533bf51c924f
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 15:14:56 2019 -0500
+
+    working on show.html for cart
+
+commit 7b7e9f43228c33917386e9336eaddb8087b1a069
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 15:09:10 2019 -0500
+
+    Completed task D2
+
+commit 076e63afb2d6b673c71a7643be6294e257b07a32
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 15:08:21 2019 -0500
+
+    Completed task D1
+
+commit d498fe92e080bfb4f962ac94d1897d55f5475df7
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Feb 3 14:16:45 2019 -0500
+
+    fixed css
+
+commit e2ee3428469adec3b131291d642532941247977d
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Wed Jan 30 18:56:15 2019 -0500
+
+    Fixed CSS issues with Dr. Xu
+
+commit 0eb7a11c7ea86240df4c20cc015ba2b5037103e6
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Wed Jan 30 13:29:31 2019 -0500
+
+    Fixed style issues
+
+commit aea3b5ced9d53a65f72f3536b030e7874df30464
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Wed Jan 30 13:27:12 2019 -0500
+
+    Fixed style issues
+
+commit 4cd135c2b8c72094610b6694678e3489b6acdca0
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:59:38 2019 -0500
+
+    Changing margins
+
+commit 162a51053dde882cb6a0a383f422d236a8757c2d
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:58:52 2019 -0500
+
+    Changing margins
+
+commit f1b7f15921fcd02525470cd9e43f8faab415727f
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:57:06 2019 -0500
+
+    Fixing the image margins for uploads
+
+commit b013c4c889c40ee9fce293425a8d8be37ce585f4
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:34:59 2019 -0500
+
+    Correcting padding. Actually fixed it i think
+
+commit d1ee30d52e194d31c92af069362ca2a1f0f6e370
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:33:32 2019 -0500
+
+    Correcting padding one more time
+
+commit 1d13a6f6a9a07539e91102f338b572f72fd76faf
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:32:58 2019 -0500
+
+    Correcting padding size again
+
+commit f09d68157616924c32cab46b95d74bb60741e31c
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:32:31 2019 -0500
+
+    Correcting padding size
+
+commit df2db8a2754db29c08665483bc5f6a492108c677
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:31:16 2019 -0500
+
+    Trying to fix the line going through my images
+
+commit 48791dd46bb3bb032ade54bcaf911a07d5f73ed8
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:18:39 2019 -0500
+
+    changed index.html to properly display price
+
+commit d5b3121ed68a231f370f31553cb6817b7c0786af
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:07:28 2019 -0500
+
+    Removed a line from gemfile
+
+commit 84fd016857b4c1a272bf5424cd4ac7e021670b11
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 20:04:29 2019 -0500
+
+    Updated gemfile
+
+commit dc971b1609c14479680bd472c4c49a57d0d2db40
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 19:50:24 2019 -0500
+
+    Updated gemlock for heroku
+
+commit 3644eee33b4dfde2cbc087c9e8ce2aa8eb1f1028
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 18:18:37 2019 -0500
+
+    Completed task 3.2
+
+commit 9094377de7532752000f5c04d799127b4b5fa0c8
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 10:24:16 2019 -0500
+
+    Finished image upload function. merging to master
+
+commit c24d14576d674f4291df3ab062c39fea3ca25204
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Mon Jan 28 10:06:07 2019 -0500
+
+    tried to bugfix the image upload function
+
+commit bd3e7c72e32e19d66e611da0f200cb1607bf2cbc
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 16:14:07 2019 -0500
+
+    Completed iteration c. Merging branch to master
+
+commit 792c691eb64a50d565b2b78525c5037424a10940
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 16:01:26 2019 -0500
+
+    fixed syntax error in applications.scss
+
+commit dfb562dbcdb63e97e758589e320ca4f6125f3ef2
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 15:59:47 2019 -0500
+
+    completed c1
+
+commit 36e5c07247de06e940221bb20aea1a1e7e3ddb08
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 13:39:17 2019 -0500
+
+    Completed iteration B. Closing branch and merging.
+
+commit af64f0d083d956197516c1462688b5e02b989aa3
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 13:34:27 2019 -0500
+
+    Completed task A2. Closing branch and merging.
+
+commit 16b37ded2537362bd0b17e8cf2b6b1508ebec9f9
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 12:21:13 2019 -0500
+
+    Completed task A1
+
+commit b2b6897bb21584dae6896705659e3f56e4397816
+Author: Sean Passmore <jeanghandi@gmail.com>
+Date:   Sun Jan 27 11:42:07 2019 -0500
+
+    Created Project 2
