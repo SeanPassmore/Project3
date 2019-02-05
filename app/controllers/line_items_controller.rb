@@ -36,7 +36,9 @@ class LineItemsController < ApplicationController
   def create
     product = Product.find(params[:product_id])
     @line_item = @cart.line_items.build(product: product)
-
+    product.popularity = product.popularity + 1
+    product.update_attribute(:popularity, product.popularity)
+    flash.alert = product.popularity
     respond_to do |format|
       if @line_item.save
         session[:counter] = 0

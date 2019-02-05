@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 group :development do
     gem 'sqlite3'
 end
-
+gem 'webpacker'
 gem 'carrierwave'
 gem 'carrierwave-aws'
 gem 'mini_magick'

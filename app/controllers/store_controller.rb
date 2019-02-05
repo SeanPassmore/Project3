@@ -1,7 +1,7 @@
 class StoreController < ApplicationController
 
   def index
-    @products = Product.order(:title)
+    @products = Product.order(:popularity).reverse_order
     if session[:counter].nil?
       session[:counter] = 0
     else
