@@ -7,13 +7,11 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 const Hello = props => (
-  <div>{props.number} books</div>
+  <div><b>{props.number} books</b></div>
 )
 
 Hello.defaultProps = {
-  node = document.getElementById('books')
-  data = JSON.parse(node.getAttribute('data')
-  number: data
+  //number: Product.count
 }
 
 Hello.propTypes = {
@@ -21,7 +19,11 @@ Hello.propTypes = {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  const node = document.getElementById('books')
+  const data = JSON.parse(node.getAttribute('data'))
+  Hello.defaultProps = {
+    number: data
+  }
   ReactDOM.render(
     <Hello props={data} />,
     document.getElementById('Boo'))
