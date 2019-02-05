@@ -11,5 +11,16 @@ class StoreController < ApplicationController
         render "index"
         end
       end
+      respond_to do |format|
+        format.html {
+          if (params[:spa] && params[:spa] == "true")
+              render 'index_spa'
+          # the else case below is by default
+          else
+             render 'index'
+          end
+          }
+        format.json {render json: @products}
+      end
     end
   end
