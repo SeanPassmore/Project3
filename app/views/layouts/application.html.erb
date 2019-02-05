@@ -22,7 +22,7 @@
         <li><%= link_to "Home (SPA)", store_index_path(spa: true) %></li>
         <li><a href="/questions">Questions</a></li> <li><a href="/news">News</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li><%= link_to "My Cart", cart_path(:cart_id) %></li>
+        <li><%= link_to "My Cart", cart_path(@cart.id) %></li>
       </ul>
     </nav>
 
