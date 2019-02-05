@@ -1,5 +1,5 @@
 class StoreController < ApplicationController
-  before_action: set_cart
+  before_action :set_cart
   def index
     @products = Product.order(:popularity).reverse_order
     if session[:counter].nil?
